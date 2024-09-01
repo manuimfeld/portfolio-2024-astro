@@ -7,7 +7,7 @@ import GlowTop from "../GlowTop.astro";
 ---
 
 <section
-  class="relative text-white flex flex-col items-start justify-center h-screen w-full"
+  class="relative text-white flex flex-col items-center lg:items-start justify-center min-h-screen w-full"
 >
   <GlowTop />
   <h2 class="text-3xl font-bold mb-6 tracking-wide">Habilidades</h2>
@@ -16,7 +16,7 @@ import GlowTop from "../GlowTop.astro";
     en las que continúo desarrollando mis habilidades. Cada categoría representa
     una parte fundamental de mi perfil profesional:
   </p>
-  <div class="gap-5 w-full flex flex-wrap justify-between">
+  <div class="gap-5 w-full flex flex-wrap justify-center lg:justify-between">
     <Card skills="Frontend">
       <Frontend />
     </Card>
