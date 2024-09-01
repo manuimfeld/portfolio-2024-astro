@@ -1,6 +1,7 @@
 ---
 import Header from "../components/header/Header.astro";
 import { ViewTransitions } from "astro:transitions";
+import Noise from "../components/Noise.astro";
 interface Props {
   title: string;
 }
@@ -20,11 +21,44 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body>
+    <Noise />
     <Header />
-    <main><slot /></main>
+      <main class="px-[20vw]">
+        <slot />
+      </main>
   </body>
 </html>
 <style is:global>
+  *::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #090C1A;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #090C1A;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #090C1A;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #535667;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #C2C6DA;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #C2C6DA;
+}
+
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -38,7 +72,7 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    background: #13151a;
+    background: #090C1A;
     scroll-behavior: smooth;
   }
   code {
