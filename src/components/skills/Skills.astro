@@ -3,9 +3,13 @@ import Card from "./Card.astro";
 import Frontend from "./Frontend.astro";
 import Backend from "./Backend.astro";
 import Tools from "./Tools.astro";
+import GlowTop from "../GlowTop.astro";
 ---
 
-<section class="text-white w-full h-screen">
+<section
+  class="relative text-white flex flex-col items-start justify-center h-screen w-full"
+>
+  <GlowTop />
   <h2 class="text-3xl font-bold mb-6 tracking-wide">Habilidades</h2>
   <p class="mb-6 text-lg text-white">
     En esta sección, te presento las áreas clave en las que tengo experiencia y
