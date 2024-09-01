@@ -7,12 +7,22 @@ import Card from './Card.astro';
 >
   <h2 class="text-3xl font-medium mb-6 tracking-wide">Proyectos</h2>
   <p class="font-light mb-6 text-lg text-white">
-    En esta sección, te presento las áreas clave en las que tengo experiencia y
-    en las que continúo desarrollando mis habilidades. Cada categoría representa
-    una parte fundamental de mi perfil profesional:
+    Aquí encontrarás una selección de proyectos en los que he trabajado,
+    aplicando mis conocimientos para enfrentar desafíos reales. Quiero destacar
+    dos de mis proyectos más recientes y significativos:
   </p>
   <div class="gap-5 w-full flex flex-wrap justify-between">
-    <Card />
-    <Card />
+    <Card
+      img_src="https://colorlib.com/wp/wp-content/uploads/sites/2/free-dashboard-templates-1.jpg"
+      title="Dashboard Admin"
+      technologies={['NextJS', 'Postgre']}
+      description="Este es un proyecto donde se implementa un dashboard administrativo con funcionalidades avanzadas."
+    />
+    <Card
+      img_src="https://colorlib.com/wp/wp-content/uploads/sites/2/free-dashboard-templates-1.jpg"
+      title="Blog personal"
+      technologies={['NextJS', 'Postgre']}
+      description="Una plataforma de blog personal que muestra mi capacidad para desarrollar interfaces atractivas y funcionales, mientras comparto mis conocimientos y experiencias."
+    />
   </div>
 </section>
