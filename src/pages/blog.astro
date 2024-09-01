@@ -1,9 +1,21 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import GlowTop from '../components/GlowTop.astro';
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Blog">
-  <main class="px-[20vw]">
-    <h1 class="text-6xl text-white mx-auto">Blog</h1>
-  </main>
+  <section
+    class="relative text-white flex flex-col items-center lg:items-start justify-center h-[calc(100vh_-_64px)] w-full"
+  >
+    <GlowTop />
+    <h1 class="text-6xl text-white mx-auto mb-4">🔨Blog en construcción🔨</h1>
+    <p class="text-xl mx-auto mb-6">
+      ¡Vuelve pronto para ver mis últimas publicaciones!
+    </p>
+    <a
+      href="/"
+      class="animate-bounce bg-[#00ADD2] hover:bg-[#008CAB] text-white font-medium py-2 px-4 mx-auto rounded shadow-md transition-all duration-300"
+      >Volver al portfolio</a
+    >
+  </section>
 </Layout>
