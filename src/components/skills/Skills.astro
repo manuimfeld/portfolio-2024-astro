@@ -2,23 +2,25 @@
 import Card from "./Card.astro";
 import Frontend from "./Frontend.astro";
 import Backend from "./Backend.astro";
-import Tools from "./Tools.astro"
+import Tools from "./Tools.astro";
 ---
 
 <section class="text-white w-full h-screen">
-    <h2 class="text-3xl font-bold mb-6 tracking-wide">Habilidades</h2>
-    <p class="mb-6 text-lg text-white">
-        En esta sección, te presento las áreas clave en las que tengo experiencia y en las que continúo desarrollando mis habilidades. Cada categoría representa una parte fundamental de mi perfil profesional:
-    </p>
-    <div class="gap-5 w-full flex flex-wrap justify-between">
-        <Card skills="Frontend">
-            <Frontend />
-        </Card>
-        <Card skills="Backend">
-            <Backend />
-        </Card>
-        <Card skills="Herramientas">
-            <Tools />
-        </Card>
-    </div>
+  <h2 class="text-3xl font-bold mb-6 tracking-wide">Habilidades</h2>
+  <p class="mb-6 text-lg text-white">
+    En esta sección, te presento las áreas clave en las que tengo experiencia y
+    en las que continúo desarrollando mis habilidades. Cada categoría representa
+    una parte fundamental de mi perfil profesional:
+  </p>
+  <div class="gap-5 w-full flex flex-wrap justify-between">
+    <Card skills="Frontend">
+      <Frontend />
+    </Card>
+    <Card skills="Backend">
+      <Backend />
+    </Card>
+    <Card skills="Herramientas">
+      <Tools />
+    </Card>
+  </div>
 </section>

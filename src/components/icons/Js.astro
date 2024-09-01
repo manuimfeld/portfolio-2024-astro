@@ -1,51 +1,77 @@
 <li class="mt-2">
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="icon-glow" id="Lager_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><circle cx="64" cy="64" r="50" style="fill:#F0DB4F;"/></g></g><g id="Layer_1_1_"><g><g><path d="M48.4,44.6h8.7v24.5c0,11-5.3,14.9-13.7,14.9c-2.1,0-4.7-0.3-6.4-0.9l1-7.1      c1.2,0.4,2.8,0.7,4.5,0.7c3.7,0,6-1.7,6-7.6L48.4,44.6L48.4,44.6z" style="fill:#323330;"/><path d="M64.8,74.4c2.3,1.2,6,2.4,9.7,2.4c4,0,6.1-1.7,6.1-4.3c0-2.4-1.8-3.8-6.5-5.4      c-6.4-2.3-10.7-5.9-10.7-11.6C63.4,49,69,44,78.1,44c4.4,0,7.6,0.9,9.9,2l-2,7c-1.5-0.7-4.3-1.8-8-1.8c-3.8,0-5.6,1.8-5.6,3.7      c0,2.5,2.1,3.6,7.2,5.5c6.8,2.5,10,6.1,10,11.6c0,6.5-4.9,12-15.6,12c-4.4,0-8.8-1.2-11-2.4L64.8,74.4z" style="fill:#323330;"/></g></g></g></g></svg>
-<span class="tooltip">JavaScript</span>
+  <!--?xml version="1.0" ?-->
+  <svg
+    class="icon-glow"
+    id="Lager_1"
+    style="enable-background:new 0 0 128 128;"
+    version="1.1"
+    viewBox="0 0 128 128"
+    xml:space="preserve"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    ><g
+      ><g
+        ><g><circle cx="64" cy="64" r="50" style="fill:#F0DB4F;"></circle></g
+        ></g
+      ><g id="Layer_1_1_"
+        ><g
+          ><g
+            ><path
+              d="M48.4,44.6h8.7v24.5c0,11-5.3,14.9-13.7,14.9c-2.1,0-4.7-0.3-6.4-0.9l1-7.1      c1.2,0.4,2.8,0.7,4.5,0.7c3.7,0,6-1.7,6-7.6L48.4,44.6L48.4,44.6z"
+              style="fill:#323330;"></path><path
+              d="M64.8,74.4c2.3,1.2,6,2.4,9.7,2.4c4,0,6.1-1.7,6.1-4.3c0-2.4-1.8-3.8-6.5-5.4      c-6.4-2.3-10.7-5.9-10.7-11.6C63.4,49,69,44,78.1,44c4.4,0,7.6,0.9,9.9,2l-2,7c-1.5-0.7-4.3-1.8-8-1.8c-3.8,0-5.6,1.8-5.6,3.7      c0,2.5,2.1,3.6,7.2,5.5c6.8,2.5,10,6.1,10,11.6c0,6.5-4.9,12-15.6,12c-4.4,0-8.8-1.2-11-2.4L64.8,74.4z"
+              style="fill:#323330;"></path></g
+          ></g
+        ></g
+      ></g
+    ></svg
+  >
+  <span class="tooltip">JavaScript</span>
 </li>
 <style>
-    .icon-glow {
-    filter: drop-shadow(0 0 10px #F0DB4F) drop-shadow(0 0 20px #F0DB4F);
+  .icon-glow {
+    filter: drop-shadow(0 0 10px #f0db4f) drop-shadow(0 0 20px #f0db4f);
     width: 50px; /* Ajusta el tamaño según sea necesario */
     height: 50px; /* Ajusta el tamaño según sea necesario */
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
     border-radius: 50%;
-}
+  }
 
-.icon-glow:hover {
+  .icon-glow:hover {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 15px #F0DB4F) drop-shadow(0 0 30px #F0DB4F);
-    border: 1px solid #F0DB4F;
-}
+    filter: drop-shadow(0 0 15px #f0db4f) drop-shadow(0 0 30px #f0db4f);
+    border: 1px solid #f0db4f;
+  }
 
-li {
+  li {
+    position: relative;
+    display: inline-block;
+  }
 
-position: relative;
-display: inline-block;
+  .tooltip {
+    visibility: hidden;
+    width: 80px; /* Ajusta el ancho según sea necesario */
+    background-color: #090c1a; /* Color de fondo del tooltip */
+    color: #fff; /* Color del texto del tooltip */
+    text-align: center;
+    border-radius: 5px; /* Borde redondeado del tooltip */
+    padding: 5px 10px; /* Espaciado dentro del tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posición del tooltip arriba del icono */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.75rem; /* Tamaño de fuente del tooltip */
+    border: 1px solid #f0db4f; /* Borde del tooltip */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra del tooltip para mejor visibilidad */
+  }
 
-}
-
-.tooltip {
-visibility: hidden;
-width: 80px; /* Ajusta el ancho según sea necesario */
-background-color: #090C1A; /* Color de fondo del tooltip */
-color: #fff; /* Color del texto del tooltip */
-text-align: center;
-border-radius: 5px; /* Borde redondeado del tooltip */
-padding: 5px 10px; /* Espaciado dentro del tooltip */
-position: absolute;
-z-index: 1;
-bottom: 125%; /* Posición del tooltip arriba del icono */
-left: 50%;
-transform: translateX(-50%); /* Centra el tooltip */
-opacity: 0;
-transition: opacity 0.3s;
-font-size: 0.75rem; /* Tamaño de fuente del tooltip */
-border: 1px solid #F0DB4F; /* Borde del tooltip */
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra del tooltip para mejor visibilidad */
-}
-
-li:hover .tooltip {
-visibility: visible;
-opacity: 1;
-}
+  li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
 </style>
