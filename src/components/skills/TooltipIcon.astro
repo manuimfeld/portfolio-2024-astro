@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  border: string;
+  background: string;
+}
+
+const { name, border, background } = Astro.props;
+---
+
+<span
+  class={`absolute -top-1/2 -right-3/4 rounded-3xl h-fit w-fit px-4 py-2 border border-[${border}] bg-[#000000] bg-[${background}] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-80 `}
+>
+  {name}
+</span>
