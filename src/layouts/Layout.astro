@@ -1,6 +1,8 @@
 ---
 import Header from "../components/header/Header.astro";
 import { ViewTransitions } from "astro:transitions";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/500.css';
 import Noise from "../components/Noise.astro";
 interface Props {
   title: string;
@@ -71,7 +73,7 @@ const { title } = Astro.props;
     );
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: 'Roboto', system-ui, sans-serif;
     background: #090c1a;
     scroll-behavior: smooth;
   }

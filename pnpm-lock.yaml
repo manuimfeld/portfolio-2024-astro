@@ -14,6 +14,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.14.5(rollup@4.21.1)(typescript@5.5.4))(tailwindcss@3.4.10)
+      '@fontsource/roboto':
+        specifier: ^5.0.14
+        version: 5.0.14
       astro:
         specifier: ^4.14.5
         version: 4.14.5(rollup@4.21.1)(typescript@5.5.4)
@@ -330,6 +333,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/roboto@5.0.14':
+    resolution: {integrity: sha512-zHAxlTTm9RuRn9/StwclFJChf3z9+fBrOxC3fw71htjHP1BgXNISwRjdJtAKAmMe5S2BzgpnjkQR93P9EZYI/Q==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2450,6 +2456,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource/roboto@5.0.14': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
