@@ -3,7 +3,6 @@ import Header from '../components/header/Header.astro';
 import { ViewTransitions } from 'astro:transitions';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/500.css';
-import Noise from '../components/Noise.astro';
 interface Props {
   title: string;
 }
@@ -23,7 +22,6 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body>
-    <Noise />
     <Header />
     <main class="px-4 lg:px-[20vw]">
       <slot />
