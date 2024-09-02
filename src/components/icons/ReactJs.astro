@@ -1,5 +1,9 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
-  class="mt-2 p-4 rounded-3xl bg-[#61dafb] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#61dafb] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#61dafb] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#61dafb] hover:border-2 hover:bg-opacity-30"
 >
   <svg
     height="32"
@@ -16,4 +20,18 @@
         style="fill:#61dafb;fill-rule:nonzero;"></path></g
     ></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="ReactJS"
+      text="text-[#000000]"
+      border="border-[#FFFFFF]"
+      background="bg-[#61dafb]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>

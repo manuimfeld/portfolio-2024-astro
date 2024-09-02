@@ -1,5 +1,9 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
-  class="mt-2 p-4 rounded-3xl bg-[#EA1B22] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#EA1B22] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#EA1B22] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#EA1B22] hover:border-2 hover:bg-opacity-30"
 >
   <svg
     viewBox="0 -222.5 512 512"
@@ -23,4 +27,18 @@
       </g>
     </g></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="Oracle Cloud"
+      text="text-[#EA1B22]"
+      border="border-[#EA1B22]"
+      background="bg-[#000000]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>

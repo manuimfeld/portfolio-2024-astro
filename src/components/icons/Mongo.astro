@@ -1,5 +1,9 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
-  class="mt-2 p-4 rounded-3xl bg-[#13aa52] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#13aa52] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#13aa52] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#13aa52] hover:border-2 hover:bg-opacity-30"
 >
   <svg
     height="32"
@@ -17,4 +21,18 @@
         style="fill:#fff"></path>
     </g></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="MongoDB"
+      text="text-[#FFFFFF]"
+      border="border-[#FFFFFF]"
+      background="bg-[#13aa52]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>

@@ -1,6 +1,10 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
   <li
-  class="mt-2 p-4 rounded-3xl bg-[#FF6C37] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#FF6C37] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#FF6C37] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#FF6C37] hover:border-2 hover:bg-opacity-30"
 >
   <svg
     height="32"
@@ -126,4 +130,18 @@
       </g>
     </g></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="Postman"
+      text="text-[#FFFFFF]"
+      border="border-[#FFFFFF]"
+      background="bg-[#FF6C37]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>

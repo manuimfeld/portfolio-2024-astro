@@ -1,5 +1,9 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
-  class="mt-2 p-4 rounded-3xl bg-[#1F62AE] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#1F62AE] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#1F62AE] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#1F62AE] hover:border-2 hover:bg-opacity-30"
 >
   <!--?xml version="1.0" ?-->
   <svg
@@ -24,4 +28,18 @@
       ></polygon></g
     ><g></g><g></g><g></g><g></g><g></g><g></g></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="CSS"
+      text="text-[#FFFFFF]"
+      border="border-[#FFFFFF]"
+      background="bg-[#347DC6]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>

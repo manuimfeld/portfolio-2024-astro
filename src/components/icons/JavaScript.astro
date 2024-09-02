@@ -1,5 +1,9 @@
+---
+import TooltipIcon from '../skills/TooltipIcon.astro';
+---
+
 <li
-  class="mt-2 p-4 rounded-3xl bg-[#F0DB4F] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#F0DB4F] hover:border-2 hover:bg-opacity-30"
+  class="relative mt-2 p-4 rounded-3xl bg-[#F0DB4F] bg-clip-padding back-drop-filter backdrop-bur-3xl bg-opacity-10 border-2 border-transparent transition-all easy-out duration-300 hover:border-[#F0DB4F] hover:border-2 hover:bg-opacity-30"
 >
   <svg
     height="32px"
@@ -28,4 +32,18 @@
       ></g
     ></svg
   >
+  <div class="tooltip-container hidden">
+    <TooltipIcon
+      name="JavaScript"
+      text="text-[#000000]"
+      border="border-[#FFFFFF]"
+      background="bg-[#F0DB4F]"
+    />
+  </div>
 </li>
+
+<style>
+  li:hover .tooltip-container {
+    display: block;
+  }
+</style>
