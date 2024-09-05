@@ -5,8 +5,9 @@ import Layout from '../layouts/Layout.astro';
 
 interface Frontmatter {
   title: string;
-  description: string;
   date: string;
+  img: string;
+  url: string;
 }
 const posts = await Astro.glob<Frontmatter>('./post/*.md');
 ---
