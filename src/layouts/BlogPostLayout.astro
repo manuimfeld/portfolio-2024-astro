@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article class="text-white w-full">
+    <section class="article-header w-full h-[100px] flex items-center">
+      <picture>
+        <img
+          height="100"
+          width="100"
+          src="https://midu.dev/images/tags/javascript.png"
+        />
+      </picture>
+      <div class="ml-4 w-full">
+        <h1 class="text-4xl">{frontmatter.title}</h1>
+        <div class="text-xs"><span>{frontmatter.date}</span></div>
+      </div>
+    </section>
+    <section class="article-content"><slot /></section>
+    <aside class="aside-bar"></aside>
+  </article>
+</Layout>
+
+<style is:global>
+  .article-header {
+    margin-bottom: 36px;
+  }
+
+  .article-content h2 {
+    margin: 48px 0 24px 0;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .article-content p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .article-content pre {
+    margin: 48px 0;
+    padding: 16px 16px;
+    font-size: 14px;
+  }
+
+  .article-content ul {
+    padding-left: 24px;
+
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .article-content p + ul {
+    margin-top: -16px;
+  }
+
+  .article-content li {
+    margin-bottom: 4px;
+    padding-bottom: 0;
+  }
+
+  .article-content :not(pre) > code {
+    background-color: #ffffff;
+    border-radius: 2px;
+    color: #1a1a1a;
+    padding: 2px 4px 1px;
+    font-size: 14px;
+  }
+</style>
