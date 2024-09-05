@@ -1,7 +1,9 @@
 ---
-layout: '../layouts/BlogPostLayout.astro'
+layout: '../../layouts/BlogPostLayout.astro'
 title: 'Presentación y primer publicación del blog'
 date: '14/01/2024'
+img: 'https://portfolio-manuimfeld.vercel.app/img/Avatar-logo.png'
+tag: me
 ---
 
 ¡Hola y bienvenidos a mi blog! 🎉

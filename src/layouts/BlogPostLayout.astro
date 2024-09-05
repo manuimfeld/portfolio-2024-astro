@@ -8,11 +8,7 @@ const { frontmatter } = Astro.props;
   <article class="text-white w-full">
     <section class="article-header w-full h-[100px] flex items-center">
       <picture>
-        <img
-          height="100"
-          width="100"
-          src="https://midu.dev/images/tags/javascript.png"
-        />
+        <img height="100" width="100" src={frontmatter.img} />
       </picture>
       <div class="ml-4 w-full">
         <h1 class="text-4xl">{frontmatter.title}</h1>

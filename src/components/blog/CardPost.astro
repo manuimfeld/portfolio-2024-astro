@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  date: string;
+  url: string;
+}
+
+const { title, date, img, url } = Astro.props;
+---
+
+<a href={url} class="ml-2 my-2 flex flex-wrap items-center h-12 w-full">
+  <picture>
+    <img height="48" width="48" src={img} ] />
+  </picture>
+  <div class="ml-4">
+    <h2>{title}</h2>
+    <span class="w-full">{date}</span>
+  </div>
+</a>
